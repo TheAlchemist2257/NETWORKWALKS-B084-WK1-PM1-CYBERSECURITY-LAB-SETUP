@@ -66,6 +66,7 @@ It supports practical exercises in areas such as:
 
 ## 🏗️ Lab Architecture
 
+![](1.png)
 ---
 
 ## ⚙️ Lab Configuration
@@ -113,7 +114,7 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 
-![](2-screenshot-network-settings-1.png)
+![](2.png)
 
 A **NAT Network** was chosen because it allows multiple virtual machines connected to the same network to communicate with each other while maintaining outbound network access.
 
