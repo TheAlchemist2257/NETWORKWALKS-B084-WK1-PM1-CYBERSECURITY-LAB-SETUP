@@ -78,10 +78,13 @@ It supports practical exercises in areas such as:
 | ⚡ Processor       | Intel Core i5      |
 | 🧰 Hypervisor      | VirtualBox 7.2  |
 | 🐉 Security OS     | Kali Linux 2026.2  |
+| 🐉 Security OS     | Window server 2022 |
 | 🧠 Kali RAM        | 2048 MB            |
+| 🧠 Window RAM      | 4096 MB            |
 | 🌐 Virtual Network | NAT Network        |
 | 📡 Network Address | 10.0.0.0/24        |
 | 🐧 Kali IP Address | 10.0.0.2/24        |
+| 🐧 window IP Address | 10.0.0.10/24     |
 | 🚪 Default Gateway | 10.0.0.1           |
 | 🌍 DNS Server      | 8.8.8.8            |
 | 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
@@ -141,9 +144,12 @@ The VM was allocated:
 ```text
 RAM: 2048 MB
 ```
-![](3-screenshot-kali-linux.png)
+![](2b.png)
+![](2a.png)
+
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
+![](5.png)
 
 
 ---
@@ -170,7 +176,7 @@ The VM was allocated:
 ```text
 RAM: 4096 MB
 ```
-![](3-screenshot-kali-linux.png)
+![](2c.png)
 
 
 
@@ -192,7 +198,7 @@ DNS: 8.8.8.8
 
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
-![](4-screenshot-kali-network-settings.png)
+![](3.png)
 
 ---
 
@@ -211,11 +217,27 @@ DNS: 8.8.8.8
 
 A consistent IP address makes it easier to document the lab and reference the window machine in future exercises.
 
-![](4-screenshot-kali-network-settings.png)
+![](6.png)
 
 ---
 
-## Step 8. Create a Clean VM Snapshot
+## Step 8. Ping the Window  From The Kali
+
+Connectivity between Kali Linux and Windows Server 2022 was tested using the `ping` command to verify network communication between the two virtual machines within the lab environment.
+
+![](9.png)
+
+---
+## Step 9. Ping the kali From The window
+
+Connectivity between Kali Linux and Windows Server 2022 was tested using the `ping` command to verify network communication between the two virtual machines within the lab environment.
+
+![](8.png)
+
+---
+
+
+## Step 10. Create a Clean VM Snapshot
 
 Once the initial configuration was complete, a snapshot of the virtual machine was created in VirtualBox to preserve its current state and provide a recovery point for future changes or troubleshooting.
 
